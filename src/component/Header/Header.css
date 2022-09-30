@@ -1,0 +1,35 @@
+.nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: white;
+}
+
+.menu{
+  padding: 0 20px 0 20px;
+  text-decoration: none;
+  color: white;
+}
+.menu:hover{
+  background: blue;
+}
+.ant-layout-header{
+  background: transparent;
+  top: 0;
+  width: 100vw;
+
+  position: fixed;
+
+  z-index: 11;
+}
+@media only screen and (max-width: 1024px) {
+  .nav{
+    grid-template-columns: 40% 60%;
+  }
+}
+ 
